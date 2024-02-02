@@ -68,6 +68,7 @@ struct Meal: Codable, Equatable, Identifiable, Hashable {
         case dateModified = "dateModified"
     }
     
+    /// Dynamic coding keys used for parsing keys programmatically
     private struct DynamicCodingKeys: CodingKey {
         var stringValue: String
         init?(stringValue: String) {
@@ -84,6 +85,7 @@ struct Meal: Codable, Equatable, Identifiable, Hashable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
+        // Required information
         self.id = try container.decode(String.self, forKey: .id)
         self.name = try container.decode(String.self, forKey: .name)
         self.imageURL = try container.decode(String.self, forKey: .imageURL)

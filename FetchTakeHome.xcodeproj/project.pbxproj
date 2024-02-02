@@ -21,7 +21,7 @@
 		3DBC22732B6C90980065D118 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC22722B6C90980065D118 /* ImageFetcher.swift */; };
 		3DBC22752B6C96CE0065D118 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC22742B6C96CE0065D118 /* ImageViewModel.swift */; };
 		3DBC22772B6C97AB0065D118 /* RequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC22762B6C97AB0065D118 /* RequestStatus.swift */; };
-		3DBC227A2B6CBCC20065D118 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC22792B6CBCC20065D118 /* Color+Extensions.swift */; };
+		3DBC64E02B6D4D9A00016B05 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC64DF2B6D4D9A00016B05 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 		3DBC22722B6C90980065D118 /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
 		3DBC22742B6C96CE0065D118 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 		3DBC22762B6C97AB0065D118 /* RequestStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestStatus.swift; sourceTree = "<group>"; };
-		3DBC22792B6CBCC20065D118 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		3DBC64DF2B6D4D9A00016B05 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,6 @@
 		3D72EC652B6B3A9600292C61 /* FetchTakeHome */ = {
 			isa = PBXGroup;
 			children = (
-				3DBC22782B6CBCB40065D118 /* Utilities */,
 				3DBC226D2B6BF36E0065D118 /* ViewModels */,
 				3DBC226A2B6BF2C60065D118 /* Routing */,
 				3D72EC772B6B3E7400292C61 /* Models */,
@@ -99,6 +98,7 @@
 			children = (
 				3D72EC752B6B3D9100292C61 /* MealManager.swift */,
 				3DBC22722B6C90980065D118 /* ImageFetcher.swift */,
+				3DBC64DF2B6D4D9A00016B05 /* Logger.swift */,
 			);
 			path = CoreServices;
 			sourceTree = "<group>";
@@ -138,14 +138,6 @@
 				3DBC22742B6C96CE0065D118 /* ImageViewModel.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		3DBC22782B6CBCB40065D118 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				3DBC22792B6CBCC20065D118 /* Color+Extensions.swift */,
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,9 +217,9 @@
 				3DBC226F2B6C82350065D118 /* MealDetailView.swift in Sources */,
 				3D72EC692B6B3A9600292C61 /* HomeView.swift in Sources */,
 				3DBC22712B6C8FF00065D118 /* ImageView.swift in Sources */,
-				3DBC227A2B6CBCC20065D118 /* Color+Extensions.swift in Sources */,
 				3DBC22772B6C97AB0065D118 /* RequestStatus.swift in Sources */,
 				3D72EC672B6B3A9600292C61 /* FetchTakeHomeApp.swift in Sources */,
+				3DBC64E02B6D4D9A00016B05 /* Logger.swift in Sources */,
 				3DBC22662B6BEDC10065D118 /* MealsViewModel.swift in Sources */,
 				3DBC22752B6C96CE0065D118 /* ImageViewModel.swift in Sources */,
 				3DBC22732B6C90980065D118 /* ImageFetcher.swift in Sources */,

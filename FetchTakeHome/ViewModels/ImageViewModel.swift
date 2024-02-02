@@ -20,7 +20,8 @@ class ImageViewModel: ObservableObject {
                 switch result {
                 case .success(let image):
                     self?.image = image
-                case .failure:
+                case .failure(let error):
+                    Logger.logFailure(error)
                     self?.requestStatus = .failed
                 }
             }

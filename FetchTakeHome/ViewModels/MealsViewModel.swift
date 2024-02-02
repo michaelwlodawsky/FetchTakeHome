@@ -21,7 +21,7 @@ class MealsViewModel: ObservableObject {
             switch result {
             case .success(let meals):
                 DispatchQueue.main.async { [weak self] in
-                    self?.meals = meals.sorted(by: { $0.name > $1.name })
+                    self?.meals = meals.sorted(by: { $0.name < $1.name })
                     self?.initialRequestStatus = .succeeded
                 }
 
@@ -49,7 +49,8 @@ class MealsViewModel: ObservableObject {
                     }
                 }
                 
-            case .failure:
+            case .failure(let error):
+                Logger.logFailure(error)
                 break // UI can handle failure, we will still have a cached object with title + img
             }
         }
